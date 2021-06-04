@@ -32,14 +32,7 @@
       "Description": "Input reserved concurrency. Increase this value if there are steady logs delay despite no errors"
     }
   },
-  "Conditions": {
-    "IsVpc": {
-      "Fn::Equals": [
-        false,
-        true
-      ]
-    }
-  },
+
   "Resources": {
     "KmsAesSiemLog44B26597": {
       "Type": "AWS::KMS::Key",
